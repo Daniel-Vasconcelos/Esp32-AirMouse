@@ -80,6 +80,10 @@ void AirMouse::click(uint8_t buttons) {
   release();
 }
 
+void AirMouse::SendControl(uint8_t buttons, int8_t deltaX, int8_t deltaY) {
+  sendReport(buttons, deltaX, deltaY);
+}
+
 bool AirMouse::isConnected() {
   return connected;
 }

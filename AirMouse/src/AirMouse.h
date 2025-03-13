@@ -26,6 +26,8 @@ class AirMouse {
     // Realiza um clique: apenas chama press() seguido de release()
     void click(uint8_t buttons);
 
+    void SendControl(uint8_t buttons, int8_t deltaX, int8_t deltaY);
+
     // Retorna se o dispositivo BLE está conectado
     bool isConnected();
 
