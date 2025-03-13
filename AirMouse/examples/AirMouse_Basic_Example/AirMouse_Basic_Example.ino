@@ -17,13 +17,14 @@ void loop() {
     delay(500);
     mouse.move(-10, 0); // Move 10 pixels para a esquerda
     delay(500);
-
     // Exemplo de clique normal (pressiona e solta automaticamente)
     mouse.click(0x01); // Clique com o botão esquerdo
     delay(1000);
 
     // Exemplo de arrastar um item:
     mouse.press(0x01); // Pressiona o botão esquerdo
+    delay(1000);
+    mouse.SendControl(0x01, 100, -100)
     delay(1000);       // Mantém pressionado por 1 segundo (arrastando)
     mouse.release();   // Solta o botão esquerdo
 
