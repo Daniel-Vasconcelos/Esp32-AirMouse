@@ -24,7 +24,7 @@ void loop() {
     // Exemplo de arrastar um item:
     mouse.press(0x01); // Pressiona o botão esquerdo
     delay(1000);
-    mouse.SendControl(0x01, 100, -100)
+    mouse.SendControl(0x01, 100, -100)//arrasta o clique
     delay(1000);       // Mantém pressionado por 1 segundo (arrastando)
     mouse.release();   // Solta o botão esquerdo
 
